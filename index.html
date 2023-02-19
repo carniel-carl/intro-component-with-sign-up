@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Intro component with sign up form</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <main>
+    <section class="description-section">
+      <h1 class="heading">Learn to code by watching others</h1>
+      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+        but understanding how developers think is invaluable.</p>
+    </section>
+
+
+    <section class="form-section">
+      <a href="#">Try it free 7 days <span class="discount">then $20/mo. thereafter</span></a>
+
+      <div class="form-container">
+        <span class="submited" id="submited"></span>
+
+        <form action="" id="form">
+          <div class="input-box">
+            <input type="text" name="first-name" id="fname" placeholder="First name">
+            <img src="images/icon-error.svg" aria-hidden="true" aria-label="error icon" class="error-icon"
+              id="fname-icon">
+
+            <span class="error-text"> </span>
+          </div>
+
+          <div class="input-box">
+            <input type="text" name="last-name" id="lname" placeholder="Last name">
+            <img src="images/icon-error.svg" aria-hidden="true" aria-label="error icon" class="error-icon"
+              id="lname-icon">
+
+            <span class="error-text" id="lname-error"></span>
+          </div>
+
+          <div class="input-box">
+            <input type="text" name="email" id="email" placeholder="Email Address">
+            <img src="images/icon-error.svg" aria-hidden="true" aria-label="error icon" class="error-icon"
+              id="email-icon">
+
+            <span class="error-text" id="email-error"> </span>
+          </div>
+
+          <div class="input-box">
+            <input type="password" name="first-name" id="password" placeholder="Password">
+            <img src="images/icon-error.svg" aria-hidden="true" aria-label="error icon" class="error-icon"
+              id="password-icon">
+
+            <span class="error-text" id="password-error"></span>
+          </div>
+
+          <button type="submit">Claim your free trial</button>
+          <p class="conditions-footer">By clicking the button, you are agreeing to our <span class="red-highlight">Terms
+              and Services</span></p>
+
+        </form>
+      </div>
+
+    </section>
+  </main>
+
+
+  <script src="index.js">
+
+  </script>
+
+</body>
+
+</html>
